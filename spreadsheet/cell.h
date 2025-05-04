@@ -27,10 +27,12 @@ private:
     class EmptyImpl;
     class TextImpl;
     class FormulaImpl;
+    bool WouldIntroduceCircularDependency(const Impl& new_impl) const;
+    void InvalidateCacheRecursive(bool force = false);
 
     std::unique_ptr<Impl> impl_;
 
-    // Добавьте поля и методы для связи с таблицей, проверки циклических 
-    // зависимостей, графа зависимостей и т. д.
-
+    Sheet& sheet_;
+    std::unordered_set<Cell*> dependent_cells_;
+    std::unordered_set<Cell*> referenced_cells_;
 };
