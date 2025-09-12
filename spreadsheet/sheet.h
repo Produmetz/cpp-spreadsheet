@@ -5,6 +5,7 @@
 
 #include <functional>
 #include <unordered_map>
+#include <cstdint>
 
 namespace std {
     template<>

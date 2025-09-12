@@ -1,32 +1,33 @@
-# Prerequisites
-*.d
+# Build directories
+build/
+dist/
+x64/
+x86/
+Debug/
+Release/
+out/
 
 # Compiled Object files
-*.slo
-*.lo
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
 
 # Executables
 *.exe
-*.out
-*.app
+
+# IDE files
+.vscode/
+.idea/
+*.sln
+*.vcxproj*
+*.user
+
+# ANTLR generated files (если они не в отдельной папке)
+FormulaLexer.*
+FormulaParser.*
+FormulaBaseListener.*
+FormulaListener.*
