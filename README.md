@@ -31,7 +31,7 @@ mkdir build
 cd build
 
 # Генерация Makefile
-cmake ..
+cmake ../spreadsheet
 
 # Компиляция проекта
 make
@@ -90,6 +90,7 @@ spreadsheet/
 ├── structures.cpp              # Вспомогательные структуры
 └── test_runner_p.h             # Фреймворк для тестирования
 ```
+
 
 
 
